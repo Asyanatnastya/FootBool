@@ -1,0 +1,237 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #8dc63f; /* Зелений фон для тіла сторінки */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    background-color: white; /* Білий фон для центрального контейнера */
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+}
+
+.name img {
+    width: 102px;
+    margin-right: 20px;
+}
+
+.name p {
+    font-size: 1.375em;
+    color: #39930d;
+}
+
+.name b {
+    font-size: 2em;
+    display: block;
+}
+
+.contacts {
+    font-size: 1.375em;
+    text-align: right;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: #39930d;
+}
+
+i {
+    color: #5a5a5a;
+}
+
+.main img {
+    width: 100%;
+    height: auto;
+}
+
+.main-content-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.about {
+    flex: 1 1 60%;
+    margin-right: 20px;
+}
+
+.about h1 {
+    font-size: 1.5em;
+    color: #39930d;
+}
+
+.partners {
+    flex: 1 1 32%;
+    background-color: #39930d;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.partners p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.partners ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.partners ul li {
+    margin-bottom: 10px;
+}
+
+.partners ul li a {
+    font-size: 0.875em;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #39930d;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Адаптивні стилі */
+@media (max-width: 1024px) {
+    .about {
+        margin-right: 0;
+        flex: 1 1 100%;
+    }
+
+    .partners {
+        flex: 1 1 100%;
+        margin-top: 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .name, .contacts {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .name img {
+        width: 80px;
+    }
+
+    .name p {
+        font-size: 1em;
+    }
+
+    .contacts {
+        font-size: 1em;
+    }
+
+    .main-content-flex {
+        flex-direction: column;
+    }
+
+    .partners {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 0 10px;
+    }
+
+    .header {
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .name {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contacts {
+        width: 100%;
+        text-align: left;
+    }
+
+    .name img {
+        width: 60px;
+    }
+
+    .name p, .contacts {
+        font-size: 0.875em;
+    }
+
+    .partners p {
+        font-size: 0.75em;
+    }
+
+    .partners ul li a {
+        font-size: 0.75em;
+    }
+
+    .footer p {
+        font-size: 0.75em;
+    }
+}
+
+@media (min-width: 1440px) {
+    .wrapper {
+        max-width: 1400px;
+    }
+
+    .name img {
+        width: 120px;
+    }
+
+    .name p {
+        font-size: 1.2em;
+    }
+
+    .contacts {
+        font-size: 1.2em;
+    }
+
+    .about {
+        flex: 1 1 70%;
+    }
+
+    .partners {
+        flex: 1 1 30%;
+    }
+}
