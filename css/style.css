@@ -48,6 +48,16 @@ i {
 main img {
     width: 100%;
 }
+
+.name img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.5s ease;
+}
+
+.name img:hover {
+    transform: translateY(-50px);
+}
 h1 {
     color: #39930d;
     font-size: 24px;
